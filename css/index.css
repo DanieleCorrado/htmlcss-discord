@@ -5,19 +5,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .button-style {
   font-size: 15px;
   border-radius: 20px;
+  padding: 10px;
+  border: none;
+}
+
+.button-style:hover {
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.white-button {
+  background-color: white;
+}
+
+.black-button {
+  color: white;
+  background-color: rgb(35, 39, 42);
+}
+
+.blue-button {
+  background-color: rgb(114, 137, 218);
 }
 
 /* Regole header */
 
 header {
-  height: 350px;
+  padding-top: 10px;
+  height: 400px;
+  width: 100%;
+  background-image: url("../img/jumbo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+header p {
+  color: white;
 }
 
 .center {
@@ -33,31 +78,34 @@ header {
 /* Regole menù di navigazione */
 
 .main-nav, .last-section {
-  align-items: baseline;
+  align-items: center;
 }
 
 .logo {
+  padding-top: 10px;
   font-size: 30px;
 }
 
 /* Regole menu header*/
 
 .menu {
+  justify-content: space-evenly;
   list-style: none;
-  flex-basis: 350px;
+  flex-basis: 800px;
 }
 
 /* Regole testo header */
 
 .description {
+  width: 50%;
   margin: 80px auto;
-  line-height: 50px;
   text-align: center;
+  line-height: 30px;
 }
 
 .button {
-  width: 20%;
-  margin: 0 auto;
+  width: 40%;
+  margin: 20px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -113,25 +161,14 @@ main {
   text-align: center;
 }
 
-.section-title {
-  text-align: center;
-  padding: 10px;
-  font-size: large;
-  font-size: 20px;
-}
-
-
 /* Regole del footer  */
 
 footer {
+  background-color: rgb(35, 39, 42);
   min-height: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px ;
 }
-
-/* hr {
-  width: 80%;
-  margin: auto;
-  border: 2px solid white;
-} */
 
 .second-nav {
   width: 80%;
@@ -142,11 +179,33 @@ footer {
   justify-content: space-evenly;
   align-items: baseline;
   padding-bottom: 20px;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgb(114, 137, 218);
+}
+
+.section-title {
+  padding-bottom: 10px;
+  color: rgb(114, 137, 218);
+}
+
+.flag {
+  height: 10px;
+}
+
+.language {
+  font-size: 10px;
+  text-align: justify;
+  color: white;
+}
+
+.info-box {
+  padding: 10px;
+  width: 200px;
+  text-align: justify;
 }
 
 .link {
   list-style: none;
+  line-height: 30px;
 }
 
 .social {
@@ -156,36 +215,40 @@ footer {
   justify-content: space-between;
 }
 
+.last-section {
+  margin-top: 20px;
+}
+
 /* DEBUG */
 
-header {
+/* header {
   background-color: violet;
   border: 2px solid black;
-}
+} */
 
-.main-nav, .last-section {
+/* .main-nav, .last-section {
   background-color: aquamarine;
   border: 2px solid black;
-}
+} */
 
-.description {
+/* .description {
   background-color: blueviolet;
   border: 2px solid black;
-}
+} */
 
-footer {
+/* footer {
   background-color: lawngreen;
   border: 2px solid black;
-}
+} */
 
-.second-nav {
+/* .second-nav {
   background-color: aqua;
- }
+ } */
 
-.info-box {
+/* .info-box, .contact {
   background-color: brown;
   border: 2px solid black;
-}
+} */
 
 /* .card {
   background-color: lightblue;
