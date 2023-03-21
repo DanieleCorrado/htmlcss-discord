@@ -23,6 +23,7 @@ a:hover {
   font-size: 15px;
   border-radius: 20px;
   padding: 10px;
+  margin-bottom: 30px;
   border: none;
 }
 
@@ -113,30 +114,36 @@ header p {
 /* Regole del main */
 
 main {
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .background-gray {
   background-color: lightgray;
+  /* padding-bottom: 50px; */
 }
 
 /* Regole card presentazone prodotto */
+.card {
+  width: 90%;
+  display: flex;
+}
 
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  min-height: 500px;
+  min-height: 650px;
   text-align: center;
 }
 
 .last-info {
+  padding: 90px;
   text-align: center;
 }
 
 .card-image {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -147,17 +154,19 @@ main {
 }
 
 .card-title {
+  margin: 20px;
   text-align: center;
 }
 
 .card-info {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
 .card-description-column {
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -255,7 +264,7 @@ footer {
   border: 3px solid black;
 } */
 
-.card-image {
+/* .card-image {
 height: 300px;
 background-color: coral;
 border: 3px solid black;
@@ -264,4 +273,4 @@ border: 3px solid black;
 .card-description, .card-description-column {
   background-color: lightgreen;
   border: 3px solid black;
-}
+} */
